@@ -16,11 +16,18 @@ export const quartisAdultosPrescricoes = {
       frequencia: "4x por semana por 8 semanas",
     },
     {
-      titulo: "FERRO OLIGO",
-      quantidade: "60ml",
-      objetivo: "Promover circulação de B9 na célula",
-      sugestao: "5 borrifadas sublingual 3x ao dia por 20 dias",
-      onde_comprar: "+55 (11) 972854142 Terapeuta Lis Sequinel",
+      titulo: "DIGESTIVAS MANIPULADAS",
+      tipo: "MANIPULADO",
+      componentes: [
+        { nome: "Bromelina", quantidade: "170mg" },
+        { nome: "Protéase", quantidade: "100mg" },
+        { nome: "Lisina", quantidade: "50mg" },
+        { nome: "Papaína", quantidade: "200mg" },
+        { nome: "Amilase", quantidade: "150mg" },
+      ],
+      preparo: "Excipiente pomegranate em cápsulas gastroresistentes",
+      sugestao: "1 dose antes da sua maior refeição por 30 dias",
+      objetivo: "Modular sistema digestório e melhorar processos absortivos",
     },
     {
       titulo: "B12 NASAL",
