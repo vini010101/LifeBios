@@ -32,12 +32,18 @@ export const quartisCriancaPrescricoes = {
 
   Q1: [
     {
-      titulo: "SUCO DE BATATA DOCE",
-      preparo:
-        "Liquidificar 1 batata doce crua pequena descascada agregada a água fria, agregar o sumo de 1 limão.",
-      sugestao: "Ingerir 300ml pela manhã ou no meio da tarde",
-      objetivo:
-        "Protetor gástrico e regulador da microbiota gástrica, melhora a absorção de nutrientes",
+      titulo: "DIGESTIVAS MANIPULADAS",
+      tipo: "MANIPULADO",
+      componentes: [
+        { nome: "Bromelina", quantidade: "170mg" },
+        { nome: "Protéase", quantidade: "100mg" },
+        { nome: "Lisina", quantidade: "50mg" },
+        { nome: "Papaína", quantidade: "200mg" },
+        { nome: "Amilase", quantidade: "150mg" },
+      ],
+      preparo: "Excipiente pomegranate em cápsulas gastroresistentes",
+      sugestao: "1 dose antes da sua maior refeição por 30 dias",
+      objetivo: "Modular sistema digestório e melhorar processos absortivos",
     },
     {
       titulo: "CHÁ DE LIMÃO NA MAIOR REFEIÇÃO DO DIA",
