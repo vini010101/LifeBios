@@ -11,20 +11,30 @@
     <div class="container">
       <header>
         <nav class="nav-bar">
+          <!-- Botão Voltar -->
           <a href="/exames/exames.html" class="back-link">
             <i data-lucide="arrow-left"></i>
-            voltar
+            Voltar
           </a>
+    
+          <!-- Botão Sair do Sistema -->
+          <a class="logout-btn" onclick="logoutUser()">
+            <i data-lucide="log-out"></i>
+            Sair do Sistema
+          </a>
+    
+          <!-- Botão Baixar Relatório -->
           <button class="download-btn" onclick="generatePDF()">
             <i data-lucide="download"></i>
             Baixar Relatório
           </button>
         </nav>
+    
         <div class="top-bar">
           <div class="logo-section">
             <img
-              src="/template/treebios_vertical-cor.png"
-              alt="Treebios Logo"
+              src="/template/logo-lifebios (2) 3.png"
+              alt="LifeBios Logo"
             />
           </div>
           <div class="header-info">
@@ -37,7 +47,8 @@
           </div>
         </div>
       </header>
-
+    </div>
+    
       <main>
         <table>
           <thead>
@@ -114,11 +125,11 @@
         <div id="status-geral" class="status-section"></div>
         <div id="prescricoes" class="prescricoes"></div>
         <div class="assinatura-profissional">
-          <img src="../template/assinatura.png" alt="">
+          <img src="../template/" alt="Assinatura do medico Responsavel">
           <div class="assinatura-linha"></div>
-          <p>Drª Denise Braga</p>
-          <p>CRBM 17269 - Fitoterapeuta clínica PhD</p>
-          <p>Informações para Suporte e tele-consulta profissional: 61 9 8151-9696</p>
+          <p>Nome do Medico Responsavel</p>
+          <p>Numero CRM - Função</p>
+          <p>Telefone da Clinica: 61 9 1234-5678</p>
         </div>
       </main>
     </div>

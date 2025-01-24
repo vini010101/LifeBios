@@ -420,3 +420,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.generatePDF = generatePDF;
+

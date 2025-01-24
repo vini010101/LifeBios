@@ -57,5 +57,23 @@ const AuthService = {
     }
 };
 
+
+
+//Funçao para Deslogar o usuario do sistema
+
+function logoutUser() {
+  // Confirmar se o usuário quer realmente sair
+  const confirmLogout = confirm("Tem certeza de que deseja sair?");
+  if (confirmLogout) {
+    // Limpar dados do usuário (exemplo: token de autenticação)
+    localStorage.clear("userToken");
+    sessionStorage.clear();
+
+    // Redirecionar para a página de login
+    window.location.href = "/login/Login.html";
+  }
+}
+
+
 // Exportar o serviço
 window.AuthService = AuthService;
