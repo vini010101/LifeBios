@@ -166,12 +166,66 @@ h2 {
   margin-bottom: 15px;
 }
 
+/* Estilização das cores do Quartis */
 .quartil-input {
   width: 100%;
+  background-color: #FF3B3B;
   padding: 12px;
   border: 1px solid #E0E4F0;
   border-radius: 8px;
-  color: #07641e;
+  color: #f8f8f8;
+  font-size: 14px;
+}
+
+
+
+.quartil-input01 {
+  width: 100%;
+  background-color: #00BF63;
+  padding: 12px;
+  border: 1px solid #E0E4F0;
+  border-radius: 8px;
+  color: #fefffe;
+  font-size: 14px;
+}
+
+.quartil-input02 {
+  width: 100%;
+  background-color: #FF8800;
+  padding: 12px;
+  border: 1px solid #E0E4F0;
+  border-radius: 8px;
+  color: #d8e2da;
+  font-size: 14px;
+}
+
+.quartil-input03 {
+  width: 100%;
+  background-color: #FF3B3B;
+  padding: 12px;
+  border: 1px solid #E0E4F0;
+  border-radius: 8px;
+  color: #f8f8f8;
+  font-size: 14px;
+}
+
+.quartil-input04 {
+  width: 100%;
+  background-color: #00BF63;
+  padding: 12px;
+  border: 1px solid #E0E4F0;
+  border-radius: 8px;
+  color: #f8f8f8;
+  font-size: 14px;
+}
+
+.quartil-input05 {
+  width: 100%;
+  background-color: #FF8800;
+  padding: 12px;
+  border: 1px solid #E0E4F0;
+  border-radius: 8px;
+  color: #f8f8f8;
   font-size: 14px;
 }
 

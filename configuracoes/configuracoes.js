@@ -144,8 +144,8 @@ function carregarIntervalos() {
                              value="${valores.Q0.join(', ')}">
                   </div>
                   <div>
-                      <label class="quartil-label">Q1</label>
-                      <input type="text" class="quartil-input"
+                      <label class="quartil-label">Q1</label01>
+                      <input type="text" class="quartil-input01"
                              data-faixa="${faixaEtaria}"
                              data-parametro="${parametro}"
                              data-quartil="Q1"
@@ -153,7 +153,7 @@ function carregarIntervalos() {
                   </div>
                   <div>
                       <label class="quartil-label">Q2</label>
-                      <input type="text" class="quartil-input"
+                      <input type="text" class="quartil-input02"
                              data-faixa="${faixaEtaria}"
                              data-parametro="${parametro}"
                              data-quartil="Q2"
@@ -163,7 +163,7 @@ function carregarIntervalos() {
               <div class="quartis-row">
                   <div>
                       <label class="quartil-label">Q3</label>
-                      <input type="text" class="quartil-input"
+                      <input type="text" class="quartil-input03"
                              data-faixa="${faixaEtaria}"
                              data-parametro="${parametro}"
                              data-quartil="Q3"
@@ -171,7 +171,7 @@ function carregarIntervalos() {
                   </div>
                   <div>
                       <label class="quartil-label">Q4</label>
-                      <input type="text" class="quartil-input"
+                      <input type="text" class="quartil-input04"
                              data-faixa="${faixaEtaria}"
                              data-parametro="${parametro}"
                              data-quartil="Q4"
@@ -179,7 +179,7 @@ function carregarIntervalos() {
                   </div>
                   <div>
                       <label class="quartil-label">Q5</label>
-                      <input type="text" class="quartil-input"
+                      <input type="text" class="quartil-input05"
                              data-faixa="${faixaEtaria}"
                              data-parametro="${parametro}"
                              data-quartil="Q5"
