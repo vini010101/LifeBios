@@ -70,7 +70,7 @@ function logoutUser() {
     sessionStorage.clear();
 
     // Redirecionar para a página de login
-    window.location.href = "/login/Loging.html";
+    window.location.href = "/login/Login.html";
   }
 }
 

@@ -91,7 +91,7 @@ async function generatePDF() {
     // Aguarda a renderização para chamar o print
     await new Promise((resolve) => {
       printFrame.onload = resolve;
-      setTimeout(resolve, 500);
+      setTimeout(resolve, 700);
     });
 
     // Inicia a impressão do conteúdo do iframe
@@ -420,4 +420,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.generatePDF = generatePDF;
-

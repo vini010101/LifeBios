@@ -11,30 +11,24 @@
     <div class="container">
       <header>
         <nav class="nav-bar">
-          <!-- Botão Voltar -->
           <a href="/exames/exames.html" class="back-link">
             <i data-lucide="arrow-left"></i>
-            Voltar
+            voltar
           </a>
-    
-          <!-- Botão Sair do Sistema -->
-          <a class="logout-btn" onclick="logoutUser()">
-            <i data-lucide="log-out"></i>
-            Sair do Sistema
-          </a>
-    
-          <!-- Botão Baixar Relatório -->
           <button class="download-btn" onclick="generatePDF()">
             <i data-lucide="download"></i>
             Baixar Relatório
           </button>
+          <button class="logout-btn" onclick=" logoutUser()">
+            <i data-lucide="logoutUser"></i>
+            Sai do Sistemas
+          </button>
         </nav>
-    
         <div class="top-bar">
           <div class="logo-section">
             <img
               src="/template/logo-lifebios (2) 3.png"
-              alt="LifeBios Logo"
+              alt="Treebios Logo"
             />
           </div>
           <div class="header-info">
@@ -47,8 +41,7 @@
           </div>
         </div>
       </header>
-    </div>
-    
+
       <main>
         <table>
           <thead>
@@ -125,11 +118,11 @@
         <div id="status-geral" class="status-section"></div>
         <div id="prescricoes" class="prescricoes"></div>
         <div class="assinatura-profissional">
-          <img src="../template/" alt="Assinatura do medico Responsavel">
+          <img src="" alt="Imagem Assinatura Medico Responsavel">
           <div class="assinatura-linha"></div>
-          <p>Nome do Medico Responsavel</p>
-          <p>Numero CRM - Função</p>
-          <p>Telefone da Clinica: 61 9 1234-5678</p>
+          <p>Nome do Medico</p>
+          <p>Numero do CRM</p>
+          <p>Informações para Contato</p>
         </div>
       </main>
     </div>
