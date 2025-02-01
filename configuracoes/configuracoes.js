@@ -27,6 +27,7 @@ function carregarIntervalos() {
         rdw_adultoH: { Q0: [0, 11], Q1: [11, 12.25], Q2: [12.25, 13.5], Q3: [13.5, 14.75], Q4: [14.75, 16], Q5: [16, Infinity] },
         eosinofilos_adultoH: { Q0: [0,  0.5], Q1: [0.2, 0.15], Q2: [0.15, 0.25], Q3: [0.25, 0.35], Q4: [0.35, 0.5], Q5: [0.5, Infinity] },
         monocitos_adultoH: { Q0: [0, 0.2], Q1: [0.2, 0.35], Q2: [0.35, 0.5], Q3: [0.5, 0.65], Q4: [0.65, 0.8], Q5: [0.8, Infinity] },
+        
 
       },
       crianca: {
@@ -71,6 +72,7 @@ function carregarIntervalos() {
         rdw_adulto: { Q0: [0, 11.5], Q1: [11.5, 12.5], Q2: [12.6, 13.5], Q3: [13.6, 14.0], Q4: [14.1, 14.5], Q5: [14.5, Infinity] },
         eosinofilos_adulto: { Q0: [0,  0.5], Q1: [0.2, 0.15], Q2: [0.15, 0.25], Q3: [0.25, 0.35], Q4: [0.35, 0.5], Q5: [0.5, Infinity] },
         monocitos_adulto: { Q0: [0, 0.2], Q1: [0.2, 0.35], Q2: [0.35, 0.5], Q3: [0.5, 0.65], Q4: [0.65, 0.8], Q5: [0.8, Infinity] },
+        
 
       },
       crianca: {
@@ -103,6 +105,9 @@ function carregarIntervalos() {
       },
     },
   };
+  
+
+  
   const genero = localStorage.getItem("generoSelecionado");
   const quartis = JSON.parse(localStorage.getItem("quartis")) || quartisDefault;
   const container = document.getElementById("quartis-container");
@@ -244,6 +249,51 @@ function salvarIntervalos() {
 function voltarParaExames() {
   window.location.href = '../exames/exames.html';
 }
+
+function novoquartil() {
+  const quartisContainer = document.getElementById('quartis-container');
+
+  // Cria um novo div para o quartil
+  const quartilDiv = document.createElement('div');
+  quartilDiv.classList.add('form-group');
+
+  // Cria o título para o nome do quartil
+  const quartilLabel = document.createElement('h4');
+  quartilLabel.textContent = 'Novo Quartil:';
+  quartilDiv.appendChild(quartilLabel);
+
+  // Cria os campos para Q0 a Q5
+  const quartisRow = document.createElement('div');
+  quartisRow.classList.add('quartis-row');
+
+  const labels = ['Q0', 'Q1', 'Q2', 'Q3', 'Q4', 'Q5'];
+  labels.forEach((label, index) => {
+      const quartilInputDiv = document.createElement('div');
+
+      // Cria o rótulo para o quartil
+      const inputLabel = document.createElement('label');
+      inputLabel.classList.add('quartil-label');
+      inputLabel.textContent = label;
+
+      // Cria o campo de entrada para o quartil
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.classList.add(`quartil-input${String(index + 1).padStart(2, '0')}`); // Exemplo: quartil-input01, quartil-input02, etc.
+      input.placeholder = `Digite os valores de ${label}`;
+
+      quartilInputDiv.appendChild(inputLabel);
+      quartilInputDiv.appendChild(input);
+
+      quartisRow.appendChild(quartilInputDiv);
+  });
+
+  quartilDiv.appendChild(quartisRow);
+  quartisContainer.appendChild(quartilDiv);
+}
+
+
+
+
 
 // Inicialização
 window.onload = function() {
